@@ -8,16 +8,18 @@ int main() {
 	string String1 = "";
 	string String2 = "";
 
+	cout << "Введiть слово #1:";
 	while (String1.length() == 0) getline(cin, String1);
+	cout << "\nВведiть слово #2:";
 	while (String2.length() == 0) getline(cin, String2);
 
 	String1 = String1[String1.size() - 1];
 	String2 = String2[String2.size() - 1];
-	
+
 	if (String1 == String2)
 		cout << "Слова закінчуються однаковими буквами";
 	else
-		cout <<" Слова закінчуються не однаковими буквами \n";
+		cout << "Слова не закінчуються однаковими буквами \n";
 }
 
 /*
